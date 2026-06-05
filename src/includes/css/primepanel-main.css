@@ -1,0 +1,464 @@
+/*---------------------------------------------------------------
+
+        Template Name: Prime Panel Admin Template | Multipurpose Admin Template.
+        Description: Welcome to Prime Panel, Multipurpose Admin Template.
+        Author: Lucid Themeslab
+        Author URL: https://www.templatemonster.com/store/lucid_themeslab/
+        Version: 1.0.0
+
+    -----------------------------------------------------------------
+
+        CSS INDEX
+        ==================
+
+        1. Root Styles
+        2. Background Color
+        2. Border Color Classes
+        3. Background Color
+        4. Shades Color Classes
+        5. Text Color Classes
+        6. Font Families
+        7. Buttons
+        
+
+----------------------------------------------------------------*/
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* ======================
+    Root Styles
+=========================*/
+
+[data-bs-primetheme="light"]{ 
+
+  /* Background-Colors */
+  --body-bg : #f0ebff; 
+  --card-bg : #ffffff;
+  --prime-bg : #1e3a8a;
+  --second-bg : #15803d;
+  --tertiary-bg : #EB8541;
+  --red-bg : #dc2626;
+  --yellow-bg : #facc15;
+  --blue-bg : #2563eb; 
+  --icon-bg : #e9e9e9;
+  --iconactive-bg : #000000; 
+  --input-bg: #ffff;
+  --faq-bg :#bbcbff;
+  --faq-body :#ffffff;
+  /* Borders-Colors */ 
+  --prime-border : #1e3a8a;
+  --second-border : #15803d;
+  --tertiary-border : #EB8541;
+  --red-border : #dc2626;
+  --yellow-border : #facc15;
+  --blue-border : #2563eb; 
+
+  /* Shades-Colors */
+  --prime-shade : #bbcbff;
+  --second-shade : #ecfdf5;
+  --tertiary-shade : #fff7ed;
+  --red-shade : #fef2f2;
+  --yellow-shade : #fefce8;
+  --blue-shade : #cee3ff;  
+
+  /* Text-Colors */
+  --head-text : #141414;
+  --input-text : #141414;
+  --para-text : #777777;
+  --icon-color : #9c9c9c;
+  --prime-text : #3730a3;
+  --second-text : #166534;
+  --tertiary-text : #ea580c;
+  --iconactive-color : #ffffff;
+  --iconactive-color2 : #3730a3; 
+  --red-text : #dc2626;
+  --yellow-text : #facc15;
+  --blue-text : #2563eb;
+  
+  /* buttons  */
+
+  --prime-btn : #1e3a8a;
+  --prime-btn-text : #fff;
+  --prime-btn-border : #1e3a8a;
+  --prime-btn-shadow : #1e3b8a4d;
+  --prime-btn-hover : #122a6d; 
+
+
+  --second-btn : #15803d;
+  --second-btn-text : #ffffff;
+  --second-btn-border : #15803d;
+  --second-btn-shadow : #6dc48929;
+  --second-btn-hover : #3f8c58; 
+
+
+  --tertiary-btn : #EB8541;
+  --tertiary-btn-text : #ffffff;
+  --tertiary-btn-border : #EB8541;
+  --tertiary-btn-shadow : #eb85411f;
+  --tertiary-btn-hover : #c2672b; 
+
+  --red-btn : #dc2626;
+  --red-btn-text : #fff;
+  --red-btn-border : #dc2626;
+  --red-btn-shadow : #dc262642;
+  --red-btn-hover : #b11c1c; 
+
+  --blue-btn : #2563eb;
+  --blue-btn-text : #ffffff;
+  --blue-btn-border : #2563eb;
+  --blue-btn-shadow : #2564eb67;
+  --blue-btn-hover : #285ac5; 
+
+  --yellow-btn : #facb0e;
+  --yellow-btn-text : #000;
+  --yellow-btn-border : #facb0e;
+  --yellow-btn-shadow : #facb0e58;
+  --yellow-btn-hover : #e3b80d; 
+
+  
+
+  /* rgb */
+  --prime-rgb : 82, 118, 216;
+  --second-rgb : 97, 204, 136;
+  --tertiary-rgb : 249, 195, 159;
+  --red-rgb : 219, 96, 96;
+  --yellow-rgb : 250, 224, 121;
+  --blue-rgb : 53, 91, 173;
+  /* Font Families */
+  --primary-font: "Raleway", sans-serif;
+  --secondary-font : "Nunito", sans-serif;
+  --light-border : #ebebeb;
+}
+
+[data-bs-primetheme="dark"]{ 
+
+  /* Background-Colors */
+  --body-bg : #323232; 
+  --card-bg : #404040;
+  --prime-bg : #4d68b3;
+  --second-bg : #15803d;
+  --tertiary-bg : #EB8541;
+  --red-bg : #dc2626;
+  --yellow-bg : #facc15;
+  --blue-bg : #2563eb; 
+  --icon-bg : #292929;
+  --iconactive-bg : #000000; 
+  --input-bg: #323232;
+   --faq-bg :#323232;
+  --faq-body :#323232;
+
+  /* Borders-Colors */ 
+  --prime-border : #4d68b3;
+  --second-border : #15803d;
+  --tertiary-border : #EB8541;
+  --red-border : #dc2626;
+  --yellow-border : #facc15;
+  --blue-border : #2563eb; 
+
+  /* Shades-Colors */
+  --prime-shade : #dce2f5;
+  --second-shade : #ecfff6;
+  --tertiary-shade : #fff7ed;
+  --red-shade : #fef2f2;
+  --yellow-shade : #fefce8;
+  --blue-shade : #cee3ff;  
+
+  /* Text-Colors */
+  --head-text : #ececec;
+  --input-text : #ececec;
+  --para-text : #d9d9d9;
+  --icon-color : #d9d9d9;
+  --prime-text : #8b83fb;
+  --second-text : #2da95c;
+  --tertiary-text : #ea580c;
+  --iconactive-color : #ffffff;
+  --iconactive-color2 : #3730a3; 
+  --red-text : #dc2626;
+  --yellow-text : #facc15;
+  --blue-text : #2563eb;
+  
+  /* buttons  */
+
+  --prime-btn : #4d68b3;
+  --prime-btn-text : #fff;
+  --prime-btn-border : #4d68b3;
+  --prime-btn-shadow : #5875c6;
+  --prime-btn-hover : #445ea5; 
+
+
+  --second-btn : #15803d;
+  --second-btn-text : #ffffff;
+  --second-btn-border : #15803d;
+  --second-btn-shadow : #6dc48929;
+  --second-btn-hover : #3f8c58; 
+
+
+  --tertiary-btn : #EB8541;
+  --tertiary-btn-text : #ffffff;
+  --tertiary-btn-border : #EB8541;
+  --tertiary-btn-shadow : #eb85411f;
+  --tertiary-btn-hover : #c2672b; 
+
+  --red-btn : #dc2626;
+  --red-btn-text : #fff;
+  --red-btn-border : #dc2626;
+  --red-btn-shadow : #dc262642;
+  --red-btn-hover : #b11c1c; 
+
+  --blue-btn : #2563eb;
+  --blue-btn-text : #ffffff;
+  --blue-btn-border : #2563eb;
+  --blue-btn-shadow : #2564eb67;
+  --blue-btn-hover : #285ac5; 
+
+  --yellow-btn : #facb0e;
+  --yellow-btn-text : #000;
+  --yellow-btn-border : #facb0e;
+  --yellow-btn-shadow : #facb0e58;
+  --yellow-btn-hover : #e3b80d; 
+
+  /* rgb */
+  --prime-rgb : 82, 118, 216;
+  --second-rgb : 97, 204, 136;
+  --tertiary-rgb : 249, 195, 159;
+  --red-rgb : 219, 96, 96;
+  --yellow-rgb : 250, 224, 121;
+  --blue-rgb : 53, 91, 173;
+  /* Font Families */
+  --primary-font: "Raleway", sans-serif;
+  --secondary-font : "Nunito", sans-serif;
+    --light-border : #8d8c8c;
+}
+ 
+   
+
+/* ======================
+  Background Color Classes
+=========================*/
+
+.body-bg{
+  background-color: var(--body-bg) !important;
+}
+.card-bg{
+  background-color: var(--card-bg) !important;
+}
+.prime-bg{
+  background-color: var(--prime-bg) !important;
+} 
+.second-bg{
+  background-color: var(--second-bg) !important;
+}
+.tertiary-bg{
+  background-color: var(--tertiary-bg) !important;
+} 
+.red-bg{
+  background-color: var(--red-bg) !important;
+} 
+.yellow-bg{
+  background-color: var(--yellow-bg) !important;
+}
+.blue-bg{
+  background-color: var(--blue-bg) !important;
+} 
+.icon-bg{
+  background-color: var(--icon-bg) !important;
+}
+.iconactive-bg{
+  background-color: var(--iconactive-bg) !important;
+} 
+.input-bg{
+  background-color: var(--input-bg) !important;
+}
+.faq-bg{
+  background-color: var(--faq-bg) !important;
+}
+.faq-body{
+  background-color: var(--faq-body) !important;
+}
+/* ======================
+  Border Color Classes
+=========================*/
+.prime-border{
+  border-color: var(--prime-border) !important;
+} 
+.second-border{
+  border-color: var(--second-border) !important;
+}
+.tertiary-border{
+  border-color: var(--tertiary-border) !important;
+} 
+.red-border{
+  border-color: var(--red-border) !important;
+} 
+.yellow-border{
+  border-color: var(--yellow-border) !important;
+}
+.blue-border{
+  border-color: var(--blue-border) !important;
+} 
+
+
+/* ======================
+  Shades Color Classes
+=========================*/
+
+.prime-shade{
+  background-color: var(--prime-shade) !important;
+} 
+.second-shade{
+  background-color: var(--second-shade) !important;
+}
+.tertiary-shade{
+  background-color: var(--tertiary-shade) !important;
+} 
+.red-shade{
+  background-color: var(--red-shade);
+} 
+.yellow-shade{
+  background-color: var(--yellow-shade);
+}
+.blue-shade{
+  background-color: var(--blue-shade);
+} 
+
+/* ======================
+  Text Color Classes
+=========================*/
+.head-text{
+  color: var(--head-text) !important; 
+}
+.para-text{
+  color: var(--para-text) !important;
+}
+.input-text{
+  color: var(--input-text) !important;
+}
+.icon-color{
+  color: var(--icon-color) !important;
+}
+.iconactive-color{
+  color: var(--iconactive-color) !important;
+}
+.prime-text{
+  color: var(--prime-text) !important;
+}
+.second-text{
+  color: var(--second-text) !important;
+}
+.tertiary-text{
+  color: var(--tertiary-text) !important;
+} 
+.red-text{
+  color: var(--red-text) !important;
+} 
+.yellow-text{
+  color: var(--yellow-text) !important;
+}
+.blue-text{
+  color: var(--blue-text) !important;
+} 
+/* ======================
+  Font Families
+=========================*/
+.prime-font{
+  font-family: var(--primary-font);
+}
+.second-font{
+  font-family: var(--secondary-font);
+}
+
+/* ==========================
+  Buttons
+============================*/
+
+.prime-btn{
+  background-color: var(--prime-btn);
+  color: var(--prime-btn-text);
+  border: 1px solid var(--prime-btn-border);
+  border-radius: 8px;
+  font-size:14px;
+  text-transform: capitalize;
+}
+.prime-btn:hover, .prime-btn:focus, .prime-btn:active{
+  background-color: var(--prime-btn-hover) !important;
+  color: var(--prime-btn-text) !important;
+  border: 1px solid var(--prime-btn-hover) !important;
+}
+
+.second-btn{
+  background-color: var(--second-btn);
+  color: var(--second-btn-text);
+  border: 1px solid var(--second-btn-border);
+  border-radius: 8px;
+  font-size:14px;
+  text-transform: capitalize;
+}
+.second-btn:hover, .second-btn:focus, .second-btn:active{
+  background-color: var(--second-btn-hover) !important;
+  color: var(--second-btn-text) !important;
+  border: 1px solid var(--second-btn-hover) !important;
+}
+
+.tertiary-btn{
+  background-color: var(--tertiary-btn);
+  color: var(--tertiary-btn-text);
+  border: 1px solid var(--tertiary-btn-border);
+  border-radius: 8px;
+  font-size:14px;
+  text-transform: capitalize;
+}
+.tertiary-btn:hover, .tertiary-btn:focus, .tertiary-btn:active{
+  background-color: var(--tertiary-btn-hover) !important;
+  color: var(--tertiary-btn-text) !important;
+  border: 1px solid var(--tertiary-btn-hover) !important;
+}
+
+.red-btn{
+  background-color: var(--red-btn);
+  color: var(--red-btn-text);
+  border: 1px solid var(--red-btn-border);
+  border-radius: 8px;
+  font-size:14px;
+  text-transform: capitalize;
+}
+.red-btn:hover, .red-btn:focus, .red-btn:active{
+  background-color: var(--red-btn-hover) !important;
+  color: var(--red-btn-text) !important;
+  border: 1px solid var(--red-btn-hover) !important;
+}
+.yellow-btn{
+  background-color: var(--yellow-btn);
+  color: var(--yellow-btn-text);
+  border: 1px solid var(--yellow-btn-border);
+  border-radius: 8px;
+  font-size:14px;
+  text-transform: capitalize;
+}
+.yellow-btn:hover, .yellow-btn:focus, .yellow-btn:active{
+  background-color: var(--yellow-btn-hover) !important;
+  color: var(--yellow-btn-text);
+  border: 1px solid var(--yellow-btn-hover) !important;
+}
+.blue-btn{
+  background-color: var(--blue-btn);
+  color: var(--blue-btn-text);
+  border: 1px solid var(--blue-btn-border);
+  border-radius: 8px;
+  font-size:14px;
+  text-transform: capitalize;
+}
+.blue-btn:hover, .blue-btn:focus, .blue-btn:active{
+  background-color: var(--blue-btn-hover) !important;
+  color: var(--blue-btn-text) ;
+  border: 1px solid var(--blue-btn-hover) !important;
+}
+.light-border{
+  border: 1px solid var(--light-border) !important;
+}
+
+.light-border-bottom{
+  border-bottom: 1px solid var(--light-border) !important;
+}
+
+.light-border-top{
+  border-top: 1px solid var(--light-border) !important;
+}
