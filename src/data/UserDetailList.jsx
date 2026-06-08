@@ -2,7 +2,7 @@ export const userslist = [
   {
     id: 1,
     name: "Alice Johnson",
-    image: "public/message1.jpg",
+    image: "/message1.jpg",
     designation: "Software Engineer",
     status: "active",
     experience: "10+ years",
@@ -17,7 +17,7 @@ export const userslist = [
   {
     id: 2,
     name: "Bob Smith",
-    image: "public/ms2.jpg",
+    image: "/ms2.jpg",
     designation: "UI / UX Designer",
     status: "online",
     experience: "7+ years",
@@ -32,7 +32,7 @@ export const userslist = [
   {
     id: 3,
     name: "Charlie Davis",
-    image: "public/ms3.jpg",
+    image: "/ms3.jpg",
     designation: "Frontend Developer",
     status: "typing...",
     experience: "5+ years",
@@ -47,7 +47,7 @@ export const userslist = [
   {
     id: 4,
     name: "David Lee",
-    image: "public/ms4.jpg",
+    image: "/ms4.jpg",
     designation: "Marketing Manager",
     status: "away",
     experience: "9+ years",
@@ -62,7 +62,7 @@ export const userslist = [
   {
     id: 5,
     name: "Emma Brown",
-    image: "public/ms5.jpg",
+    image: "/ms5.jpg",
     designation: "Backend Developer",
     status: "offline",
     experience: "6+ years",
@@ -77,7 +77,7 @@ export const userslist = [
   {
     id: 6,
     name: "Sophia Wilson",
-    image: "public/ms6.jpg",
+    image: "/ms6.jpg",
     designation: "Project Manager",
     status: "active",
     experience: "11+ years",

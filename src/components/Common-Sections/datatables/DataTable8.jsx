@@ -21,10 +21,10 @@ const UserTable = () => {
   const tableRef1 = useRef(null);
 
   useEffect(() => {
-     // Table 1
-  
+    // Table 1
+
     const table = $(tableRef1.current).DataTable({
-        responsive: true,
+      responsive: true,
       lengthMenu: [4, 15, 20, 25],
     });
 
@@ -35,98 +35,106 @@ const UserTable = () => {
     };
   }, []);
 
-    const taskList = [
-        {
-            id: 1,
-            image: "public/tv-product.jpg",
-            Sku: " lg TV @2546  Lorem ipsum dolor sit amet.",
-            price: "$2000",
-        },
-        {
-            id: 2,
-            image: "public/shoes.jpg",
-            Sku: " lg TV @2546  Lorem ipsum dolor sit amet.",
-            price: "$2000",
-        },
-        {
-            id: 3,
-            image: "public/can.jpg",
-            Sku: " lg TV @2546  Lorem ipsum dolor sit amet.",
-            price: "$2000",
-        },
-        {
-            id: 4,
-            image: "public/earrings.jpg",
-            Sku: " lg TV @2546  Lorem ipsum dolor sit amet.",
-            price: "$2000",
-        },
-        {
-            id: 5,
-            image: "public//watch.jpg",
-            Sku: " lg TV @2546  Lorem ipsum dolor sit amet.",
-            price: "$2000",
-        },
-        {
-            id: 6,
-            image: "public/watch2.jpg",
-            Sku: " lg TV @2546  Lorem ipsum dolor sit amet.",
-            price: "$2000",
-        },
-        {
-            id: 7,
-            image: "public/tv-product.jpg",
-            Sku: " lg TV @2546  Lorem ipsum dolor sit amet.",
-            price: "$2000",
-        },
-        {
-            id: 8,
-            image: "public/tv-product.jpg",
-            Sku: " lg TV @2546  Lorem ipsum dolor sit amet.",
-            price: "$2000",
-        },
-        {
-            id: 9,
-            image: "public/tv-product.jpg",
-            Sku: " lg TV @2546  Lorem ipsum dolor sit amet.",
-            price: "$2000",
-        },
-        {
-            id: 10,
-            image: "public/tv-product.jpg",
-            Sku: " lg TV @2546  Lorem ipsum dolor sit amet.",
-            price: "$2000",
-        },
-    ];
-  
+  const taskList = [
+    {
+      id: 1,
+      image: "/tv-product.jpg",
+      Sku: " lg TV @2546  Lorem ipsum dolor sit amet.",
+      price: "$2000",
+    },
+    {
+      id: 2,
+      image: "/shoes.jpg",
+      Sku: " lg TV @2546  Lorem ipsum dolor sit amet.",
+      price: "$2000",
+    },
+    {
+      id: 3,
+      image: "/can.jpg",
+      Sku: " lg TV @2546  Lorem ipsum dolor sit amet.",
+      price: "$2000",
+    },
+    {
+      id: 4,
+      image: "/earrings.jpg",
+      Sku: " lg TV @2546  Lorem ipsum dolor sit amet.",
+      price: "$2000",
+    },
+    {
+      id: 5,
+      image: "//watch.jpg",
+      Sku: " lg TV @2546  Lorem ipsum dolor sit amet.",
+      price: "$2000",
+    },
+    {
+      id: 6,
+      image: "/watch2.jpg",
+      Sku: " lg TV @2546  Lorem ipsum dolor sit amet.",
+      price: "$2000",
+    },
+    {
+      id: 7,
+      image: "/tv-product.jpg",
+      Sku: " lg TV @2546  Lorem ipsum dolor sit amet.",
+      price: "$2000",
+    },
+    {
+      id: 8,
+      image: "/tv-product.jpg",
+      Sku: " lg TV @2546  Lorem ipsum dolor sit amet.",
+      price: "$2000",
+    },
+    {
+      id: 9,
+      image: "/tv-product.jpg",
+      Sku: " lg TV @2546  Lorem ipsum dolor sit amet.",
+      price: "$2000",
+    },
+    {
+      id: 10,
+      image: "/tv-product.jpg",
+      Sku: " lg TV @2546  Lorem ipsum dolor sit amet.",
+      price: "$2000",
+    },
+  ];
 
   return (
-               <div className="data-entries p-3 collapse show" id="dataentriesmain"> 
-                     <table ref={tableRef1}   className="table table-striped table-bordered" style={{ width: "100%" }} >
-                        <thead>
-                                <tr> 
-                                    <th>Product</th> 
-                                    <th>Sku</th> 
-                                    <th>Price</th> 
-                                </tr>
-                          </thead>
-                        <tbody>
-                            {taskList.map((item, index) => {
-                                return (
-                                    <tr key={index}>
-                                        <td>
-                                            <div className="d-flex align-items-center">
-                                                <img src={`${item.image}`} width="100" height="50" className="object-fit-contain" alt=""/>
-                                            </div>
-                                        </td>
-                                        <td>{item.Sku}</td>
-                                        <td>{item.price}</td>
-                                    </tr>
-                                )
-                            })}
-                        </tbody>
-                  </table>
-                </div>  
-         
+    <div className="data-entries p-3 collapse show" id="dataentriesmain">
+      <table
+        ref={tableRef1}
+        className="table table-striped table-bordered"
+        style={{ width: "100%" }}
+      >
+        <thead>
+          <tr>
+            <th>Product</th>
+            <th>Sku</th>
+            <th>Price</th>
+          </tr>
+        </thead>
+        <tbody>
+          {taskList.map((item, index) => {
+            return (
+              <tr key={index}>
+                <td>
+                  <div className="d-flex align-items-center">
+                    <img
+                      src={`${item.image}`}
+                      width="100"
+                      height="50"
+                      className="object-fit-contain"
+                      alt=""
+                    />
+                  </div>
+                </td>
+                <td>{item.Sku}</td>
+                <td>{item.price}</td>
+              </tr>
+            );
+          })}
+        </tbody>
+      </table>
+    </div>
   );
 };
 
